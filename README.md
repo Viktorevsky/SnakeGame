@@ -2,7 +2,7 @@
 
 A Snake game that runs directly in your terminal, built with Node.js.
 
-![demo](assets/ИМЯ_ФАЙЛА.РАСШИРЕНИЕ)
+![demo](gameplay.png)
 ## Requirements
 
 - [Docker](https://www.docker.com/get-started) — no Node.js needed
