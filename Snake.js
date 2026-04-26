@@ -68,13 +68,15 @@ let time = 200;
 let arr = Zone.split('');
 let applesCount = 1
 
-function apple(){
-    let num = Math.round(Math.random() * arr.length)
-    while(arr[num] == '#' || arr[num] == '\n' || arr[num] == '0'){
-        num = Math.round(Math.random() * arr.length)
-    }
+function apple() {
+    let num;
+    do {
+        let r = Math.floor(Math.random() * (HEIGTH)) + 1;  
+        let c = Math.floor(Math.random() * (WIDTH - 2)) + 1; 
+        num = r * (WIDTH + 1) + c;
+    } while (arr[num] === '#' || arr[num] === '\n' || arr[num] === '0' || arr[num] === '@' || arr[num] === 'X');
+    
     arr[num] = 'X';
-
 }
 
 
